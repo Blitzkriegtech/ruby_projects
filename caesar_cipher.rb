@@ -13,14 +13,12 @@ def caesar_ciper (string, shift = 1)
         ciphertext += " "
 
     elsif alphabet_lowcase.include?(char)
-      old_idx_lowcase = alphabet_lowcase.find_index(char)
-      new_idx_lowcase = (old_idx_lowcase + shift) % alphabet_lowcase.count
-      ciphertext += alphabet_lowcase[new_idx_lowcase]
+      new_idx = (alphabet_lowcase.find_index(char) + shift) % alphabet_lowcase.count
+      ciphertext += alphabet_lowcase[new_idx]
     
     elsif alphabet_upcase.include?(char)
-      old_idx_upcase = alphabet_upcase.find_index(char)
-      new_idx_upcase = (old_idx_upcase + shift) % alphabet_upcase.count
-      ciphertext += alphabet_upcase[new_idx_upcase]
+      new_idx = (alphabet_upcase.find_index(char) + shift) % alphabet_upcase.count
+      ciphertext += alphabet_upcase[new_idx]
     
     elsif punctuation.include?(char.ord) || numbers.include?(char)
       ciphertext += char
@@ -31,4 +29,4 @@ def caesar_ciper (string, shift = 1)
   end
   puts ciphertext
 end
-caesar_ciper("sd#sdas#+-=_*%", 7)
+caesar_ciper("Aljun", 7)
