@@ -7,7 +7,7 @@ def caesar_ciper (string, shift = 1)
   numbers = ("0".."9").to_a
   ciphertext = "" 
 
-#Checks each char of the string and find its current index
+#Checks each char of the string and find its new index
   string.each_char do |char|
     if char == " "
         ciphertext += " "
