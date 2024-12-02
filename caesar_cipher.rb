@@ -9,9 +9,7 @@ def caesar_ciper (string, shift = 1)
 
 #Checks each char of the string and find its new index
   string.each_char do |char|
-    if char == " "
-        ciphertext += " "
-
+    
     elsif alphabet_lowcase.include?(char)
       new_idx = (alphabet_lowcase.find_index(char) + shift) % alphabet_lowcase.count
       ciphertext += alphabet_lowcase[new_idx]
