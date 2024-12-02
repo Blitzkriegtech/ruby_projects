@@ -11,4 +11,4 @@ def substring_counter(sentence, dictionary)
   end
 end
 my_sentence = gets.chomp
-puts "Result: #{substring_counter(my_sentence, dictionary)}"
+puts "Result: #{substring_counter(my_sentence, dictionary)}" 
