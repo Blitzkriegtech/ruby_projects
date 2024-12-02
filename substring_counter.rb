@@ -10,5 +10,5 @@ def substring_counter(sentence, dictionary)
     result
   end
 end
-
-puts substring_counter("BELOW THE TITANIC", dictionary)
+my_sentence = gets.chomp
+puts "Result: #{substring_counter(my_sentence, dictionary)}"
