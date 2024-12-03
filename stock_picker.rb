@@ -5,7 +5,7 @@ def stock_picker(prices)
   buy_day = 0
   sell_day = 0
 
-  prices.map.with_index do |price, day|
+  prices.each_with_index do |price, day|
     if price < min_price
       min_price = price
       min_day = day
