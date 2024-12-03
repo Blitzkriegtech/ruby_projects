@@ -10,7 +10,7 @@ and then outputs the modified string using a right shift.
 ## Sub strings
 Implemented a method that takes a word as the first argument
 and then an array of valid substrings (e.g., dictionary) as the second argument that
-returns a hash listing each substring (case insensitive) that was found in the original string and 
+returns a hash listing of each substring (case insensitive) that was found in the original string and 
 how many times it was found.
 
 ## Stock picker
